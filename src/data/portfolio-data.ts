@@ -10,9 +10,8 @@ export const portfolioData = {
   },
 
   social: {
-    github: "https://github.com/vinaysai",
-    linkedin: "https://linkedin.com/in/vinaysai",
-    twitter: "https://twitter.com/vinaysai",
+    github: "https://github.com/vinaysaichelupuri",
+    linkedin: "https://www.linkedin.com/in/vinay-sai-chelupuri-085642277/",
     email: "mailto:chelupurivinaysai02@gmail.com",
   },
 
@@ -158,7 +157,7 @@ export const portfolioData = {
       id: 1,
       title: "Software Engineer",
       company: "Everest Engineering",
-      location: "Remote",
+      location: "Onsite",
       period: "July 2024 - Present",
       description:
         "Delivering high-quality, scalable, and maintainable software solutions. Contributing to projects by applying strong problem-solving skills and technical expertise to efficiently achieve objectives.",
@@ -173,7 +172,7 @@ export const portfolioData = {
       id: 2,
       title: "Curious Intern",
       company: "Everest Engineering",
-      location: "Remote",
+      location: "Onsite",
       period: "Feb 2024 - June 2024",
       description:
         "Gained hands-on experience in software development and learned to apply skills to real-world projects. Worked closely with teams to improve collaboration and communication abilities.",

@@ -94,7 +94,6 @@ export default function HeroSection() {
                 >
                   {key === "github" && "💻"}
                   {key === "linkedin" && "💼"}
-                  {key === "twitter" && "🐦"}
                   {key === "email" && "📧"}
                 </motion.a>
               ))}
