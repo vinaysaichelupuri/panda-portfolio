@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 import PandaCharacter from "../PandaCharacter";
 import {
   fadeInUp,
@@ -22,14 +24,31 @@ export default function ContactSection() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
+    try {
+      await emailjs.send(
+        "service_g1gtzsw",
+        "template_fmni7gh",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "9eL3sHNFo3JGpmq5A"
+      );
+      toast.success(
+        "🐼 Message sent successfully! I'll get back to you soon.",
+        {
+          duration: 5000,
+        }
+      );
       setFormData({ name: "", email: "", message: "" });
-    }, 3000);
+    } catch (error) {
+      toast.error("😢 Failed to send message. Please try again later.", {
+        duration: 5000,
+      });
+    }
   };
 
   const handleChange = (

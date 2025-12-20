@@ -5,7 +5,7 @@ export const portfolioData = {
     tagline:
       "Building scalable web and mobile applications with the balance of a panda 🐼",
     email: "chelupurivinaysai02@gmail.com",
-    location: "India",
+    location: "Warangal, India",
     bio: "I'm a full-stack developer with hands-on experience in building both web and mobile applications using MERN stack, NestJS, Firebase, and React Native. Skilled in designing scalable APIs, developing real-time features, and creating responsive UIs. Strong problem-solving mindset and proven ability to deliver end-to-end projects with clean, maintainable code and focus on accessibility. Deeply interested in app development, as I enjoy creating applications that can solve real-world problems and provide value to users.",
   },
 
