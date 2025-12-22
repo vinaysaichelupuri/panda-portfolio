@@ -4,7 +4,7 @@ import ClientWrapper from "@/components/ClientWrapper";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Vinay Sai - Full Stack Developer 🐼",
+  title: "Vinay Sai | Full Stack Developer",
   description:
     "A playful yet professional portfolio showcasing full-stack development skills with a charming panda theme. Explore projects, skills, and experience in a unique bamboo forest setting.",
   keywords: [
@@ -17,8 +17,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Vinay Sai" }],
   openGraph: {
-    title: "Vinay Sai - Full Stack Developer 🐼",
+     title: "Vinay Sai Chelpuri | Full Stack Developer ",
     description: "A playful yet professional portfolio with a panda theme",
+    url: "https://vinaysaichelupuri.com",
+    siteName: "Vinay Sai Portfolio",
     type: "website",
   },
 };
