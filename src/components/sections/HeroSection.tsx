@@ -130,13 +130,31 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator (animated mouse) */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 1.5, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-4xl z-10"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 text-panda-gray dark:text-gray-300"
+        aria-hidden="true"
       >
-        ⬇️
+        <svg
+          className="w-7 h-11"
+          viewBox="0 0 24 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Scroll down"
+        >
+          <rect x="1.5" y="1.5" width="21" height="37" rx="10.5" stroke="currentColor" strokeWidth="2" className="opacity-40" />
+          <motion.circle
+            cx="12"
+            cy="10"
+            r="3"
+            fill="currentColor"
+            animate={{ cy: [10, 24, 10] }}
+            transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </svg>
       </motion.div>
     </section>
   );
