@@ -2,26 +2,73 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper";
 import { Toaster } from "react-hot-toast";
+import PersonSchema from "@/components/PersonSchema";
 
 export const metadata: Metadata = {
-  title: "Vinay Sai | Full Stack Developer",
+  title: "Vinay Sai Chelupuri | Full Stack Developer Portfolio",
   description:
-    "A playful yet professional portfolio showcasing full-stack development skills with a charming panda theme. Explore projects, skills, and experience in a unique bamboo forest setting.",
+    "Vinay Sai Chelupuri - Full Stack Developer specializing in React, Node.js, and mobile development. Explore my portfolio featuring web and mobile applications built with modern technologies.",
   keywords: [
+    "Vinay Sai",
+    "Vinay Sai Chelupuri",
+    "Vinaysai Chelupuri",
     "Full Stack Developer",
-    "React",
+    "Software Engineer",
+    "React Developer",
+    "Node.js Developer",
+    "React Native Developer",
+    "TypeScript",
+    "JavaScript",
     "Next.js",
-    "Node.js",
+    "MongoDB",
     "Portfolio",
     "Web Development",
+    "Mobile Development",
+    "Warangal Developer",
+    "Indian Developer",
   ],
-  authors: [{ name: "Vinay Sai" }],
+  authors: [{ name: "Vinay Sai Chelupuri" }],
+  creator: "Vinay Sai Chelupuri",
+  publisher: "Vinay Sai Chelupuri",
+  metadataBase: new URL("https://vinaysaichelupuri.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-     title: "Vinay Sai Chelpuri | Full Stack Developer ",
-    description: "A playful yet professional portfolio with a panda theme",
+    title: "Vinay Sai Chelupuri | Full Stack Developer Portfolio",
+    description:
+      "Full Stack Developer specializing in React, Node.js, React Native, and modern web technologies. View my projects and experience.",
     url: "https://vinaysaichelupuri.com",
-    siteName: "Vinay Sai Portfolio",
+    siteName: "Vinay Sai Chelupuri - Portfolio",
+    locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Vinay Sai Chelupuri - Full Stack Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vinay Sai Chelupuri | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, Node.js, and mobile development. Check out my portfolio!",
+    images: ["/og-image.png"],
+    creator: "@vinaysai",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -33,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <PersonSchema />
         <ClientWrapper>{children}</ClientWrapper>
         <Toaster
           position="top-right"
