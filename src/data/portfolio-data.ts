@@ -114,7 +114,7 @@ export const portfolioData = {
       image: "/images/project-typerush.png",
       tags: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/vinaysaichelupuri/TypeRush",
-      demo: "https://typerush-6hvs.onrender.com/",
+      demo: "https://typerush.in/",
       featured: false,
     },
     {
@@ -136,7 +136,7 @@ export const portfolioData = {
       image: "/images/project-securepad.png",
       tags: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/vinaysaichelupuri/securepad",
-      demo: "https://securepad.onrender.com/",
+      demo: "https://securepad.vinaysaichelupuri.com/",
       featured: false,
     },
     {
@@ -147,7 +147,7 @@ export const portfolioData = {
       image: "/images/project-story-estimater.png",
       tags: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/vinaysaichelupuri/story-estimater",
-      demo: "https://story-estimater.vercel.app/",
+      demo: "https://storyestimator.vinaysaichelupuri.com//",
       featured: false,
     },
   ],
