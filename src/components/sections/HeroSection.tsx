@@ -6,6 +6,8 @@ import PandaCharacter from "../PandaCharacter";
 import { fadeInUp, staggerContainer } from "@/utils/animations";
 import { portfolioData } from "@/data/portfolio-data";
 import PandaButton from "../PandaButton";
+import Lottie from "lottie-react";
+import pandaAnimation from "@/assets/pandaAnimation.json";
 
 export default function HeroSection() {
   const [showWalkingPanda, setShowWalkingPanda] = useState(false);
@@ -115,18 +117,9 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Right: Panda Character */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden md:flex justify-center"
-          >
-            <PandaCharacter
-              type="waving"
-              enableEasterEgg
-              className="max-w-md"
-            />
-          </motion.div>
+          <div style={{ width: 450 }}>
+            <Lottie animationData={pandaAnimation} loop />
+          </div>
         </div>
       </div>
 
@@ -145,7 +138,16 @@ export default function HeroSection() {
           role="img"
           aria-label="Scroll down"
         >
-          <rect x="1.5" y="1.5" width="21" height="37" rx="10.5" stroke="currentColor" strokeWidth="2" className="opacity-40" />
+          <rect
+            x="1.5"
+            y="1.5"
+            width="21"
+            height="37"
+            rx="10.5"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="opacity-40"
+          />
           <motion.circle
             cx="12"
             cy="10"
