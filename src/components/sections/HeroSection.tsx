@@ -41,12 +41,12 @@ export default function HeroSection() {
       )}
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
           {/* Left: Text Content */}
           <motion.div
             initial="initial"
             animate="animate"
-            className="text-center md:text-left"
+            className="text-center md:text-left order-2 md:order-1"
           >
             <motion.div
               variants={fadeInUp}
@@ -117,8 +117,10 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Right: Panda Character */}
-          <div style={{ width: 450 }}>
-            <Lottie animationData={pandaAnimation} loop />
+          <div className="flex justify-center items-center w-full order-1 md:order-2">
+            <div className="w-full max-w-[200px] sm:max-w-[280px] md:max-w-[400px] lg:max-w-[450px]">
+              <Lottie animationData={pandaAnimation} loop />
+            </div>
           </div>
         </div>
       </div>
