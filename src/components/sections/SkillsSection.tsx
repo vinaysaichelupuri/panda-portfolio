@@ -81,12 +81,6 @@ export default function SkillsSection() {
                   <motion.div
                     key={skillIndex}
                     variants={fadeInUp}
-                    whileHover={{
-                      scale: 1.15,
-                      y: -15,
-                      rotate: [0, -10, 10, -5, 5, 0],
-                      transition: { duration: 0.5 },
-                    }}
                     whileTap={{ scale: 0.95 }}
                     className="relative group cursor-pointer"
                   >
@@ -99,11 +93,7 @@ export default function SkillsSection() {
 
                     {/* Skill content */}
                     <div className="relative bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg text-center group-hover:shadow-2xl group-hover:shadow-lime-300/50 transition-shadow">
-                      <motion.div
-                        className="text-4xl mb-3"
-                        whileHover={{ scale: 1.3, rotate: 360 }}
-                        transition={{ duration: 0.5 }}
-                      >
+                      <motion.div className="text-4xl mb-3">
                         {skill.icon}
                       </motion.div>
                       <div className="font-semibold text-panda-black dark:text-panda-white mb-2">

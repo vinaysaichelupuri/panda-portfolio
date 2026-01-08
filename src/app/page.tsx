@@ -19,7 +19,7 @@ export default function Home() {
       <ExperienceSection />
       <CertificationsSection />
       <ContactSection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
