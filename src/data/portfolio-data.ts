@@ -147,7 +147,7 @@ export const portfolioData = {
       image: "/images/project-story-estimater.png",
       tags: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/vinaysaichelupuri/story-estimater",
-      demo: "https://storyestimator.vinaysaichelupuri.com//",
+      demo: "https://story-estimator.vinaysaichelupuri.com",
       featured: false,
     },
   ],
