@@ -77,7 +77,7 @@ export default function CertificationsSection() {
             >
               <motion.div
                 className="text-5xl mb-4"
-                whileHover={{ scale: 1.2, rotate: 360 }}
+                whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.5 }}
               >
                 🏆
