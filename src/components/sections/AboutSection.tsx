@@ -112,7 +112,7 @@ export default function AboutSection() {
 
             <div className="grid grid-cols-3 gap-4">
               <motion.div
-                whileHover={{ scale: 1.1, y: -8, rotate: 360 }}
+                whileHover={{ scale: 1.1, y: -8}}
                 transition={{ duration: 0.5 }}
                 className="glass p-6 rounded-xl text-center cursor-pointer"
               >
@@ -126,7 +126,7 @@ export default function AboutSection() {
               </motion.div>
 
               <motion.div
-                whileHover={{ scale: 1.1, y: -8, rotate: -360 }}
+                whileHover={{ scale: 1.1, y: -8}}
                 transition={{ duration: 0.5 }}
                 className="glass p-6 rounded-xl text-center cursor-pointer"
               >
@@ -140,7 +140,7 @@ export default function AboutSection() {
               </motion.div>
 
               <motion.div
-                whileHover={{ scale: 1.1, y: -8, rotate: [0, 10, -10, 0] }}
+                whileHover={{ scale: 1.1, y: -8 }}
                 transition={{ duration: 0.3 }}
                 className="glass p-6 rounded-xl text-center cursor-pointer"
               >
