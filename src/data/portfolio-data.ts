@@ -150,6 +150,25 @@ export const portfolioData = {
       demo: "https://story-estimator.vinaysaichelupuri.com",
       featured: false,
     },
+    {
+      id: 10,
+      title: "AI Chatbot with RAG - Personal AI Assistant",
+      description:
+        "A full-stack AI chatbot that answers questions about me using Retrieval-Augmented Generation (RAG). The application retrieves relevant information from a custom knowledge base and uses a local LLM to generate contextual responses. Built with a React chat interface and a Node.js backend integrated with a local Llama 3 model via Ollama.",
+      image: "/images/project-ai-chatbot.png",
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "Llama3",
+        "Ollama",
+        "RAG",
+        "AI",
+        "LLM",
+      ],
+      github: "https://github.com/vinaysaichelupuri/chatbot-monorepo",
+      featured: true,
+    },
   ],
 
   experience: [
