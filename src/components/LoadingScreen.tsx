@@ -10,7 +10,7 @@ export default function LoadingScreen() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
