@@ -65,14 +65,38 @@ export const portfolioData = {
 
   projects: [
     {
-      id: 1,
-      title: "Hanami - E-Commerce Platform",
+      id: 11,
+      title: "GramoPhone - Offline Music Player",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, product showcase, wishlist, cart management, and seamless checkout flow.",
-      image: "/images/project-hanami.png",
-      tags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
-      github: "https://github.com/vinaysaichelupuri/Hanami",
-      demo: "https://hanami-4aav.onrender.com",
+        "Built this Android-first offline music app using AI Architect + Developer agents. Planned, generated, and integrated features end-to-end with agent-driven development.",
+      image: "/images/project-gramophone.png",
+      tags: [
+        "React Native",
+        "TypeScript",
+        "AI Agents",
+        "Spec Driven Development",
+      ],
+      github: "https://github.com/vinaysaichelupuri/gramophone",
+      demo: "https://expo.dev/artifacts/eas/bqoxWXNxKsAs3CaeNJDHYY.apk",
+      featured: true,
+    },
+    {
+      id: 10,
+      title: "AI Chatbot with RAG - Personal AI Assistant",
+      description:
+        "A full-stack AI chatbot that answers questions about me using Retrieval-Augmented Generation (RAG). The application retrieves relevant information from a custom knowledge base and uses a local LLM to generate contextual responses. Built with a React chat interface and a Node.js backend integrated with a local Llama 3 model via Ollama.",
+      image: "/images/project-ai-chatbot.png",
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "Llama3",
+        "Ollama",
+        "RAG",
+        "AI",
+        "LLM",
+      ],
+      github: "https://github.com/vinaysaichelupuri/chatbot-monorepo",
       featured: true,
     },
     {
@@ -85,27 +109,7 @@ export const portfolioData = {
       github: "https://github.com/NikithaMedikonda/quickchat-frontend",
       featured: true,
     },
-    {
-      id: 3,
-      title: "PetBuddy - Pet Management System",
-      description:
-        "A mobile application designed to help pet owners manage their pets' health, appointments, and daily activities. Features reminders, activity logging, emergency contacts, and photo gallery.",
-      image: "/images/project-petbuddy.png",
-      tags: ["React Native", "MongoDB", "Node.js", "Express"],
-      github: "https://github.com/vinaysaichelupuri/PetBuddy",
-      featured: true,
-    },
-    {
-      id: 5,
-      title: "RetroBoard - Team Retrospective Tool",
-      description:
-        "A simple retro board application that allows users to create and manage retrospectives, providing a platform for team collaboration and feedback with real-time updates.",
-      image: "/images/project-retroboard.png",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      github: "https://github.com/vinaysaichelupuri/RetroBoard",
-      demo: "https://retroboard-3vps.onrender.com/",
-      featured: false,
-    },
+
     {
       id: 6,
       title: "TypeRush - Typing Speed Game",
@@ -115,17 +119,6 @@ export const portfolioData = {
       tags: ["React", "Tailwind CSS", "Firebase"],
       github: "https://github.com/vinaysaichelupuri/TypeRush",
       demo: "https://typerush.in/",
-      featured: false,
-    },
-    {
-      id: 7,
-      title: "Vinvert - Image Converter",
-      description:
-        "A simple image converter application that converts image formats from one to another and reduces the size of images. Supports multiple formats including JPG, PNG, and WebP.",
-      image: "/images/project-vinvert.png",
-      tags: ["React", "Tailwind CSS"],
-      github: "https://github.com/vinaysaichelupuri/Vinvert",
-      demo: "https://vinvert.onrender.com/",
       featured: false,
     },
     {
@@ -150,23 +143,48 @@ export const portfolioData = {
       demo: "https://story-estimator.vinaysaichelupuri.com",
       featured: false,
     },
+
     {
-      id: 10,
-      title: "AI Chatbot with RAG - Personal AI Assistant",
+      id: 3,
+      title: "PetBuddy - Pet Management System",
       description:
-        "A full-stack AI chatbot that answers questions about me using Retrieval-Augmented Generation (RAG). The application retrieves relevant information from a custom knowledge base and uses a local LLM to generate contextual responses. Built with a React chat interface and a Node.js backend integrated with a local Llama 3 model via Ollama.",
-      image: "/images/project-ai-chatbot.png",
-      tags: [
-        "React",
-        "Node.js",
-        "Express",
-        "Llama3",
-        "Ollama",
-        "RAG",
-        "AI",
-        "LLM",
-      ],
-      github: "https://github.com/vinaysaichelupuri/chatbot-monorepo",
+        "A mobile application designed to help pet owners manage their pets' health, appointments, and daily activities. Features reminders, activity logging, emergency contacts, and photo gallery.",
+      image: "/images/project-petbuddy.png",
+      tags: ["React Native", "MongoDB", "Node.js", "Express"],
+      github: "https://github.com/vinaysaichelupuri/PetBuddy",
+      featured: true,
+    },
+    {
+      id: 5,
+      title: "RetroBoard - Team Retrospective Tool",
+      description:
+        "A simple retro board application that allows users to create and manage retrospectives, providing a platform for team collaboration and feedback with real-time updates.",
+      image: "/images/project-retroboard.png",
+      tags: ["React", "Firebase", "Tailwind CSS"],
+      github: "https://github.com/vinaysaichelupuri/RetroBoard",
+      demo: "https://retroboard-3vps.onrender.com/",
+      featured: false,
+    },
+    {
+      id: 7,
+      title: "Vinvert - Image Converter",
+      description:
+        "A simple image converter application that converts image formats from one to another and reduces the size of images. Supports multiple formats including JPG, PNG, and WebP.",
+      image: "/images/project-vinvert.png",
+      tags: ["React", "Tailwind CSS"],
+      github: "https://github.com/vinaysaichelupuri/Vinvert",
+      demo: "https://vinvert.onrender.com/",
+      featured: false,
+    },
+    {
+      id: 1,
+      title: "Hanami - E-Commerce Platform",
+      description:
+        "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, product showcase, wishlist, cart management, and seamless checkout flow.",
+      image: "/images/project-hanami.png",
+      tags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+      github: "https://github.com/vinaysaichelupuri/Hanami",
+      demo: "https://hanami-4aav.onrender.com",
       featured: true,
     },
   ],
