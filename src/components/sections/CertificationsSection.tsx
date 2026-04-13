@@ -33,10 +33,6 @@ export default function CertificationsSection() {
           src="/images/panda-trophy.png"
           alt="Trophy Panda"
           className="w-32 h-32 object-contain"
-          animate={{
-            rotate: [0, -10, 10, 0],
-            scale: [1, 1.1, 1],
-          }}
           transition={{
             duration: 3,
             repeat: Infinity,

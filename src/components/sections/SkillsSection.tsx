@@ -25,10 +25,6 @@ export default function SkillsSection() {
           src="/images/panda-karate.png"
           alt="Karate Panda"
           className="w-32 h-32 object-contain"
-          animate={{
-            y: [0, -15, 0],
-            rotate: [0, 5, -5, 0],
-          }}
           transition={{
             duration: 3,
             repeat: Infinity,

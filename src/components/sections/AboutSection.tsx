@@ -52,11 +52,8 @@ export default function AboutSection() {
               src="/images/panda-coding.png"
               alt="Coding Panda"
               className="max-w-sm w-full h-auto object-contain cursor-pointer"
-              whileHover={{ scale: 1.05, rotate: [0, 5, -5, 0] }}
+              whileHover={{ scale: 1.05}}
               whileTap={{ scale: 0.95 }}
-              animate={{
-                y: [0, -15, 0],
-              }}
               transition={{
                 duration: 3,
                 repeat: Infinity,

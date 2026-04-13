@@ -127,10 +127,6 @@ export default function ContactSection() {
                   src="/images/panda-message.png"
                   alt="Messaging Panda"
                   className="max-w-sm w-full h-auto object-contain"
-                  animate={{
-                    y: [0, -10, 0],
-                    rotate: [0, 3, -3, 0],
-                  }}
                   transition={{
                     duration: 3,
                     repeat: Infinity,

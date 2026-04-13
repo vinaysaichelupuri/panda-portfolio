@@ -28,10 +28,6 @@ export default function ProjectsSection() {
           src="/images/panda-builder.png"
           alt="Builder Panda"
           className="w-32 h-32 object-contain"
-          animate={{
-            rotate: [0, 10, -10, 0],
-            y: [0, -10, 0],
-          }}
           transition={{
             duration: 4,
             repeat: Infinity,
