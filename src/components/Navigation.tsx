@@ -68,7 +68,7 @@ export default function Navigation() {
                   className={`font-medium transition-colors ${
                     isActive
                       ? "text-lime-700 dark:text-lime-300 border-b-2 border-lime-700 dark:border-lime-300"
-                      : "text-panda-black dark:text-panda-white hover:text-lime-700 dark:hover:text-lime-300"
+                      : "text-gray-900 dark:text-gray-100 hover:text-lime-700 dark:hover:text-lime-300"
                   }`}
                 >
                   {item.label}
@@ -80,12 +80,20 @@ export default function Navigation() {
           {/* Theme Toggle */}
           <motion.button
             onClick={toggleTheme}
-            whileHover={{ scale: 1.06 }}
+            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="rounded-full border border-gray-300 dark:border-gray-600 px-3 py-1.5 text-sm font-semibold text-panda-black dark:text-panda-white"
+            className="p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
             aria-label="Toggle theme"
           >
-            {theme === "light" ? "Dark" : "Light"}
+            {theme === "light" ? (
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            )}
           </motion.button>
         </div>
 
@@ -94,7 +102,7 @@ export default function Navigation() {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="text-2xl text-panda-black dark:text-panda-white"
+            className="text-2xl text-gray-900 dark:text-gray-100"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -124,7 +132,7 @@ export default function Navigation() {
                     className={`w-full text-left px-4 py-2 font-medium rounded-lg transition-colors ${
                       isActive
                         ? "text-lime-700 dark:text-lime-300 bg-lime-50 dark:bg-lime-900/30"
-                        : "text-panda-black dark:text-panda-white hover:text-lime-700 dark:hover:text-lime-300 hover:bg-lime-50 dark:hover:bg-lime-900/20"
+                        : "text-gray-900 dark:text-gray-100 hover:text-lime-700 dark:hover:text-lime-300 hover:bg-lime-50 dark:hover:bg-lime-900/20"
                     }`}
                   >
                     {item.label}
@@ -142,8 +150,17 @@ export default function Navigation() {
                 }}
                 whileHover={{ scale: 1.05, x: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full text-left px-4 py-2 font-medium text-panda-black dark:text-panda-white hover:text-lime-700 dark:hover:text-lime-300 hover:bg-lime-50 dark:hover:bg-lime-900/20 rounded-lg transition-colors flex items-center gap-3"
+                className="w-full text-left px-4 py-2 font-medium text-gray-900 dark:text-gray-100 hover:text-lime-700 dark:hover:text-lime-300 hover:bg-lime-50 dark:hover:bg-lime-900/20 rounded-lg transition-colors flex items-center gap-3"
               >
+                {theme === "light" ? (
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                )}
                 <span>{theme === "light" ? "Dark Mode" : "Light Mode"}</span>
               </motion.button>
             </div>

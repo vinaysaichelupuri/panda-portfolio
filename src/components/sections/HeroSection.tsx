@@ -72,11 +72,11 @@ export default function HeroSection() {
               variants={fadeInUp}
               className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
             >
-              <PandaButton href="#projects" variant="primary">
+              <PandaButton href="/projects" variant="primary">
                 View My Work
               </PandaButton>
 
-              <PandaButton href="#contact" variant="secondary">
+              <PandaButton href="/contact" variant="secondary">
                 Get In Touch
               </PandaButton>
             </motion.div>

@@ -86,7 +86,7 @@ export default function ContactSection() {
             variants={fadeInUp}
             className="mt-4 text-lg text-panda-gray dark:text-gray-300"
           >
-            Let&apos;s build something amazing together! 🚀
+            Let&apos;s build something amazing together!
           </motion.p>
         </motion.div>
 
@@ -229,7 +229,7 @@ export default function ContactSection() {
                 whileTap={{ scale: 0.98 }}
                 className="w-full px-8 py-4 bg-bamboo-600 hover:bg-bamboo-700 text-white rounded-xl font-semibold shadow-lg transition-colors panda-cursor"
               >
-                Send Message 🚀
+                Send Message
               </motion.button>
             </form>
           </motion.div>

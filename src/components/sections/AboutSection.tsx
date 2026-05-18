@@ -127,7 +127,6 @@ export default function AboutSection() {
                 transition={{ duration: 0.5 }}
                 className="glass p-6 rounded-xl text-center cursor-pointer"
               >
-                <div className="text-3xl mb-2 animate-pulse-slow">🚀</div>
                 <div className="text-2xl font-bold text-lime-600 dark:text-lime-400">
                   {portfolioData.projects.length}+
                 </div>

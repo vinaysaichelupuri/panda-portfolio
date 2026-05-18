@@ -59,7 +59,7 @@ export default function ProjectsSection() {
             variants={fadeInUp}
             className="mt-4 text-lg text-panda-gray dark:text-gray-300"
           >
-            Check out some of my recent work 🚀
+            Check out some of my recent work
           </motion.p>
         </motion.div>
 
@@ -142,7 +142,7 @@ export default function ProjectsSection() {
                       whileTap={{ scale: 0.95 }}
                       className="flex-1 px-4 py-2 bg-bamboo-600 text-white rounded-lg font-semibold text-center hover:bg-bamboo-700 transition-colors panda-cursor"
                     >
-                      Live Demo 🚀
+                      Live Demo 
                     </motion.a>
                   ) : (
                     ""
