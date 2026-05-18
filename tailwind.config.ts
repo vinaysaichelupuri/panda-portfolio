@@ -42,9 +42,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        space: ["Space Grotesk", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        nunito: ["Nunito", "sans-serif"],
+        space: ["Fraunces", "serif"],
+        poppins: ["Manrope", "sans-serif"],
+        nunito: ["Manrope", "sans-serif"],
       },
       animation: {
         float: "float 3s ease-in-out infinite",
