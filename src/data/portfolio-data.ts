@@ -4,15 +4,15 @@ export const portfolioData = {
     title: "Software Engineer",
     tagline:
       "Building scalable web and mobile applications with the balance of a panda",
-    email: "chelupurivinaysai02@gmail.com",
-    location: "Warangal, India",
+    email: "vinaysaichelupuri@gmail.com",
+    location: "Warangal, Telangana, India",
     bio: "I'm Vinay Sai, a full-stack developer with hands-on experience in building both web and mobile applications using MERN stack, NestJS, Firebase, and React Native. Skilled in designing scalable APIs, developing real-time features, and creating responsive UIs. Strong problem-solving mindset and proven ability to deliver end-to-end projects with clean, maintainable code and focus on accessibility. Deeply interested in app development, as I enjoy creating applications that can solve real-world problems and provide value to users.",
   },
 
   social: {
     github: "https://github.com/vinaysaichelupuri",
     linkedin: "https://www.linkedin.com/in/vinay-sai-chelupuri-085642277/",
-    email: "mailto:chelupurivinaysai02@gmail.com",
+    email: "vinaysaichelupuri@gmail.com",
   },
 
   skills: [
@@ -66,6 +66,22 @@ export const portfolioData = {
   ],
 
   projects: [
+    {
+      id: 12,
+      title: "AI-Insta - AI Content Automation Platform",
+      description:
+        "An autonomous AI-powered content automation platform that plans, generates, renders, and publishes Instagram carousel content. Built with a React frontend and Node.js backend, the platform automates topic planning, content generation, and carousel design. It utilizes browser automation and HTML-based templates to render high-quality 1080×1350 images, which are programmatically published to Instagram using the Instagram Graph API.",
+      image: "/images/project-ai-insta.jpg",
+      tags: [
+        "React",
+        "Node.js",
+        "Instagram Graph API",
+        "Browser Automation",
+        "AI Agents",
+      ],
+      github: "https://github.com/vinaysaichelupuri",
+      featured: true,
+    },
     {
       id: 11,
       title: "GramoPhone - Offline Music Player",
@@ -195,31 +211,46 @@ export const portfolioData = {
     {
       id: 1,
       title: "Software Engineer",
-      company: "Everest Engineering",
+      company: "Foundation Education - HubSpot and Stripe integration",
       location: "Onsite",
-      period: "July 2024 - Present",
+      period: "March 2026 - June 2026",
       description:
-        "Delivering high-quality, scalable, and maintainable software solutions. Contributing to projects by applying strong problem-solving skills and technical expertise to efficiently achieve objectives.",
+        "Designed and delivered a multi-brand billing orchestration platform integrating HubSpot CRM, Stripe, and Azure to automate sales and support team billing workflows.",
       achievements: [
-        "Built production-grade features for Liively food delivery platform",
-        "Optimized API performance and implemented database migrations",
-        "Enhanced user experience through UI improvements and workflow optimization",
-        "Committed to continuous learning and adoption of emerging technologies",
+        "Designed webhook-driven subscription workflows using SDD, supporting various cancellation scenarios.",
+        "Built event-driven synchronization between Stripe and HubSpot for subscription lifecycle events.",
+        "Implemented Azure Table Storage for persistent webhook events, improving reliability and auditability.",
+        "Integrated private Azure PostgreSQL infrastructure and automated schema migrations via GitHub Actions.",
       ],
     },
     {
       id: 2,
-      title: "Curious Intern",
+      title: "Software Engineer - Liively Platform",
+      company: "Everest Engineering",
+      location: "Onsite",
+      period: "July 2024 - Feb 2026",
+      description:
+        "Contributed to a production-grade food delivery and vendor management platform used by hospitality and event services across Australia and UAE.",
+      achievements: [
+        "Developed order management workflows and complex vendor refund logic using NestJS.",
+        "Implemented real-time order tracking and notifications using Socket.IO.",
+        "Optimized database queries and APIs to improve application performance and reliability.",
+        "Deployed and maintained backend services on AWS with CI/CD pipelines using GitHub Actions and Jenkins.",
+        "Practiced Test Driven Development (TDD) using Jest within an Agile development environment.",
+      ],
+    },
+    {
+      id: 3,
+      title: "Software Developer Intern",
       company: "Everest Engineering",
       location: "Onsite",
       period: "Feb 2024 - June 2024",
       description:
-        "Gained hands-on experience in software development and learned to apply skills to real-world projects. Worked closely with teams to improve collaboration and communication abilities.",
+        "Gained hands-on experience in full-stack software development and learned to apply skills to real-world projects.",
       achievements: [
-        "Learned Git, GitHub, CI/CD, Docker, and AWS",
-        "Developed skills in React, React Native, Node.js, and databases",
-        "Practiced TDD, Agile methodologies, and Clean Code principles",
-        "Built strong foundation in full-stack development",
+        "Built full-stack features using the MERN stack and React Native.",
+        "Implemented authentication systems, REST APIs, and database integrations with MongoDB and PostgreSQL.",
+        "Learned Docker, CI/CD workflows, version control, and clean code practices.",
       ],
     },
   ],

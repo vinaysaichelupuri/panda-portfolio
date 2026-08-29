@@ -76,12 +76,12 @@ export default function ExperienceSection() {
                 {/* Content */}
                 <div
                   className={`w-full md:w-5/12 ${
-                    index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"
+                    index % 2 === 0 ? "md:pr-12" : "md:pl-12"
                   } pl-20 md:pl-0`}
                 >
                   <motion.div
                     whileHover={{ scale: 1.02, y: -5 }}
-                    className="glass p-6 rounded-2xl"
+                    className="glass p-6 rounded-2xl text-left"
                   >
                     <div className="text-bamboo-600 dark:text-bamboo-400 font-semibold mb-2">
                       {exp.period}
@@ -99,9 +99,12 @@ export default function ExperienceSection() {
                     {/* Achievements */}
                     <div className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
-                        <div key={i} className="flex items-start gap-2">
+                        <div
+                          key={i}
+                          className="flex items-start gap-2 text-left"
+                        >
                           <span className="text-bamboo-500 mt-1">🎋</span>
-                          <span className="text-sm text-panda-gray dark:text-gray-300">
+                          <span className="text-sm text-panda-gray dark:text-gray-300 flex-1">
                             {achievement}
                           </span>
                         </div>
