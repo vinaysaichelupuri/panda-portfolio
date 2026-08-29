@@ -79,7 +79,7 @@ export const portfolioData = {
         "Browser Automation",
         "AI Agents",
       ],
-      github: "https://github.com/vinaysaichelupuri",
+      github: "https://github.com/vinaysaichelupuri/AI-Insta",
       featured: true,
     },
     {
