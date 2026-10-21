@@ -286,5 +286,15 @@ export const portfolioData = {
       issuer: "AWS",
       date: "April 2025",
     },
+    {
+      name: "Open AI Codex Practitioner",
+      issuer: "OpenAI",
+      date: "October 2026",
+    },
+    {
+      name: "Stripe Professional Platform Developer",
+      issuer: "Stripe",
+      date: "October 2026",
+    },
   ],
 };
